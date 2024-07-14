@@ -27,7 +27,7 @@ class Utils:
     def search_song(self, song_info):
         print(song_info)
         data = {"name": song_info, "y": 1, "n": 1, "apiKey": self.song_key}
-        url = "https://api.linhun.vip/api/qqyy"
+        url = "https://api.lolimi.cn/API/wydg/api.php"
         resp = self.search(data, url)
         logging.info("search api, code:{}, resp:{}".format(resp["code"], resp))
         if resp["code"] is not None and resp["code"] == 200:
